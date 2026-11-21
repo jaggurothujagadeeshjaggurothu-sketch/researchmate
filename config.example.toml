@@ -1,0 +1,19 @@
+# ResearchMate AI - backend configuration
+# Copy this file to config.toml and edit. Environment variables (or .env) override these values.
+# Keep config.toml private: it can contain your Gemini API key.
+
+[ollama]
+url   = "http://localhost:11434/api/chat"
+model = "llama3.2"
+
+[gemini]
+# Get a key at https://aistudio.google.com/apikey
+api_key = ""
+model   = "gemini-2.0-flash"
+
+[ai]
+timeout_seconds = 180
+max_attempts    = 3
+
+[server]
+cors_origins = ["http://localhost:5173", "http://127.0.0.1:5173"]
